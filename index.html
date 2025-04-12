@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Library Management System to search and save favorite books.">
+    <meta name="author" content="Your Name">
+    <title>Library Management System</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="library.js" defer></script>
+</head>
+<body>
+    <div class="container shadow-sm p-4 rounded">
+        <h1 class="text-center my-4 display-4">Library Management System</h1>
+        <p class="text-center text-muted mb-4">Search for books and save your favorites!</p>
+        
+        <div class="search-container card p-3 mb-4">
+            <div class="form-group d-flex align-items-center">
+                <input type="search" class="form-control" id="searchInput" placeholder="Search by book title..." aria-label="Search for a book">
+                <button id="searchBtn" class="btn btn-primary ml-2"><i class="fas fa-search"></i> Search</button>
+                <button id="clearBtn" class="btn btn-outline-secondary ml-2">Clear</button>
+            </div>
+        </div>
+
+        <div id="searchResults" class="row"></div>
+        
+        <div id="loading" class="hidden text-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <footer class="text-center mt-4">
+            <p class="text-muted">Created by Sodi Lepakshi</p>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

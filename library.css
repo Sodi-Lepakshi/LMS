@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    background-color: #f0f4f8;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-image: url("https://assets.ccbp.in/frontend/dynamic-webapps/library-management-bg.png");
+    background-size: cover;
+    background-position: center;
+    max-width: 1200px;
+    background-color: white;
+}
+
+.search-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.book-item {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.book-item img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.book-details {
+    flex: 1;
+}
+
+.book-title {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.book-author {
+    color: #666;
+    font-style: italic;
+}
+
+.no-results {
+    color: #7f8c8d;
+    text-align: center;
+    padding: 20px;
+}
+
+.spinner-border {
+    margin-top: 30px;
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (max-width: 768px) {
+    .book-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .book-item img {
+        margin: 0 auto 15px;
+    }
+}
